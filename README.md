@@ -12,10 +12,12 @@ I wanted to create a Windows-based container for SyncThing on Docker for two rea
 
 In order to build this project, you must first aquire the latest version of SyncThing core for Windows x64. You can find current releases [here](https://github.com/syncthing/syncthing/releases/). Make sure to get the download titled 'syncthing-windows-amd64&lt;syncthing_version&gt;.zip'. For example, the version I used: https://github.com/syncthing/syncthing/releases/download/v0.14.24/syncthing-windows-amd64-v0.14.24.zip.
 
-Once you have the zip, rename it and place it in the repository root folder. Then, run the following command:
-'''winbatch
+Extract the zip file. It will contain a directory. Zip the contents of the directory (NOT the directory itself) as syncthing.zip. Take this new zip file place it in the repository root folder.
+
+Next, run the following command:
+```winbatch
 docker build .
-'''
+```
 If you are unfamiliar with building in Docker, I recommend that you familiarize yourself with the basics of the build command and its options here: https://docs.docker.com/engine/reference/commandline/build/
 
 ## Contributors
